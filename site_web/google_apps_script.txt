@@ -1,0 +1,53 @@
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    
+    var timestamp = new Date();
+    var productId = data.productId || "";
+    var productName = data.productName || "";
+    var quantity = data.quantity || 1;
+    var fullName = data.fullName || "";
+    var phone = data.phone || "";
+    var city = data.city || "";
+    var totalPrice = data.totalPrice || "";
+
+    sheet.appendRow([
+      timestamp,
+      productId,
+      productName,
+      quantity,
+      fullName,
+      phone,
+      city,
+      totalPrice
+    ]);
+
+    var output = ContentService.createTextOutput(JSON.stringify({
+      status: "success",
+      message: "Data recorded successfully"
+    })).setMimeType(ContentService.MimeType.JSON);
+
+    return addCorsHeaders(output);
+  } catch (error) {
+    var errOutput = ContentService.createTextOutput(JSON.stringify({
+      status: "error",
+      message: error.toString()
+    })).setMimeType(ContentService.MimeType.JSON);
+
+    return addCorsHeaders(errOutput);
+  }
+}
+
+function doGet(e) {
+  var output = ContentService.createTextOutput(JSON.stringify({
+    status: "online",
+    service: "Arvea Nature Web App Script"
+  })).setMimeType(ContentService.MimeType.JSON);
+
+  return addCorsHeaders(output);
+}
+
+function addCorsHeaders(output) {
+  return output;
+}

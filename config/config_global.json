@@ -1,0 +1,62 @@
+{
+  "entreprise": {
+    "nom": "Arvea Nature",
+    "pays": "Tunisie",
+    "secteur": "Cosmétique & Bien-être Naturel",
+    "devise": "TND",
+    "github_production_url": "https://github.com/hanibaldevlopmenttn-dotcom/Agent-AREVA-.git",
+    "github_ssh_repo": "git@github.com:hanibaldevlopmenttn-dotcom/Agent-AREVA-.git",
+    "telegram_bot_url": "https://t.me/orchestre_tilisi_bot",
+    "contact_email": "contact.arveatunisie@gmail.com",
+    "whatsapp_support": "+21620000000"
+  },
+  "produits": [
+    {
+      "id": "prod_01",
+      "nom": "Collagène Marin",
+      "prix_tnd": 85.0,
+      "description_fr": "Formule hautement concentrée pour régénérer la peau, les cheveux et les articulations.",
+      "description_ar": "كولاجين بحري طبيعي لتقوية البشرة والشعر والمفاصل وإعادة النضارة."
+    },
+    {
+      "id": "prod_02",
+      "nom": "Brûle Graisse Naturel",
+      "prix_tnd": 65.0,
+      "description_fr": "Complément minceur naturel stimulant le métabolisme et la combustion des graisses.",
+      "description_ar": "مكمل طبيعي لحرق الدهون وتسريع الأيض ونحت الجسم بأمان."
+    },
+    {
+      "id": "prod_03",
+      "nom": "Huile d'Argan Pure",
+      "prix_tnd": 45.0,
+      "description_fr": "Huile 100% bio et pressée à froid, hydratation intense pour le visage et les cheveux.",
+      "description_ar": "زيت أرغان خالص 100% طبيعي لترطيب وتغذية عميقة للوجه والشعر."
+    },
+    {
+      "id": "prod_04",
+      "nom": "Complément Multivitaminé",
+      "prix_tnd": 55.0,
+      "description_fr": "Complexe vitaminé quotidien renforçant l'immunité et réduisant la fatigue.",
+      "description_ar": "مكمل فيتامينات متكامل لتعزيز المناعة اليومية ومحاربة التعب."
+    },
+    {
+      "id": "prod_05",
+      "nom": "Tisane Détox",
+      "prix_tnd": 35.0,
+      "description_fr": "Mélange de plantes naturelles pour purifier l'organisme et faciliter la digestion.",
+      "description_ar": "شاي أعشاب ديتوكس طبيعي لتنظيف الجسم وتحسين عملية الهضم."
+    },
+    {
+      "id": "prod_06",
+      "nom": "Crème Anti-Âge Naturelle",
+      "prix_tnd": 95.0,
+      "description_fr": "Soin raffermissant enrichi aux actifs naturels pour lisser les rides profondes.",
+      "description_ar": "كريم طبيعي مقاوم للتجاعيد ومشدود للبشرة الغنية بالعناصر المغذية."
+    }
+  ],
+  "livraison": {
+    "frais_standard_tnd": 7.0,
+    "seuil_livraison_gratuite_tnd": 150.0,
+    "delai_jours": "24-48h sur toute la Tunisie"
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvea Nature Tunisie - Catalogue & Commande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🌿 ARVEA NATURE TUNISIE</div>
+        <div class="lang-switch">
+            <button id="btnFr" class="active" onclick="switchLanguage('fr')">FR</button>
+            <button id="btnAr" onclick="switchLanguage('ar')">العربية</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 id="heroTitle">Produits de Beauté & Bien-être Naturels</h1>
+        <p id="heroSub">Formules certifiées riches en Huile d'Argan et Aloe Vera. Livraison sur toute la Tunisie (24h/48h).</p>
+    </section>
+
+    <main class="catalog-container">
+        <h2 id="catalogTitle" class="section-title">Nos Produits Phares</h2>
+        <div class="grid-products" id="productsGrid">
+            <!-- Rempli par JavaScript -->
+        </div>
+    </main>
+
+    <section class="order-section" id="orderFormSection">
+        <div class="form-card">
+            <h2 id="formTitle">Commander Rapide & Paiement à la Livraison</h2>
+            <form id="orderForm">
+                <input type="hidden" id="selectedProductId" name="productId">
+                <input type="hidden" id="selectedProductName" name="productName">
+                <input type="hidden" id="selectedProductPrice" name="productPrice">
+
+                <div class="form-group">
+                    <label id="lblProduct">Produit sélectionné :</label>
+                    <input type="text" id="displayProduct" readonly placeholder="Choisissez un produit ci-dessus" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="lblQty" for="quantity">Quantité :</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label id="lblName" for="fullName">Nom & Prénom :</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Ex: Foulen Ben Foulen" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="lblPhone" for="phone">Numéro de Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ex: 20123456" pattern="[0-9]{8}" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="lblCity" for="city">Ville / Gouvernorat :</label>
+                    <input type="text" id="city" name="city" placeholder="Ex: Tunis, Sfax, Sousse..." required>
+                </div>
+
+                <div class="price-summary">
+                    <span id="lblTotal">Total à payer : </span>
+                    <strong id="totalPrice">0.00 TND</strong>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit" id="btnSubmit">🛒 Valider la Commande</button>
+                    <button type="button" class="btn-whatsapp" id="btnWa" onclick="orderViaWhatsApp()">💬 Commander par WhatsApp</button>
+                </div>
+            </form>
+            <div id="statusMessage" class="status-message"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Arvea Nature Tunisie. Bot Telegram : <a href="https://t.me/orchestre_tilisi_bot" target="_blank">@orchestre_tilisi_bot</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

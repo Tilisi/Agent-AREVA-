@@ -1,0 +1,22 @@
+{
+  "livraison": {
+    "fr": "🚚 Livraison sur toute la Tunisie sous 24h à 48h. Les frais de livraison sont à 7 TND, et la livraison est GRATUITE pour toute commande supérieure ou égale à 150 TND.",
+    "ar": "🚚 التوصيل لكامل تراب الجمهورية التونسية في ظرف 24 إلى 48 ساعة. معلوم التوصيل 7 دينار، ويكون مجاني بالكامل للطلبيات اللي تفوت 150 دينار."
+  },
+  "paiement": {
+    "fr": "💵 Le paiement s'effectue exclusivement à la livraison (Paiement à la réception du colis en espèces auprès du livreur).",
+    "ar": "💵 الدفع يكون كاش يد بيد وقت استلام الطرد من عند ساعي البريد أو شركة التوصيل (Paiement à la livraison)."
+  },
+  "produits": {
+    "fr": "🌿 Nos produits Arvea Nature sont 100% naturels, riches en huile d'argan et aloe vera, certifiés et fabriqués selon les normes internationales les plus strictes.",
+    "ar": "🌿 منتوجات أرفيا (Arvea Nature) طبيعية 100% غنية بزيت الأرغان والألوفيرا، ومصادق عليها ومصنوعة حسب أعلى معايير الجودة العالمية."
+  },
+  "contact": {
+    "fr": "📞 Pour contacter notre service client ou obtenir des conseils personnalisés, vous pouvez nous joindre sur WhatsApp ou par email.",
+    "ar": "📞 للاتصال بمصلحة الحرفاء أو لطلب استشارة مجانية، تنجمو تكلمونا مباشرة عبر الواتساب أو البريد الإلكتروني."
+  },
+  "garantie": {
+    "fr": "✅ Satisfaction garantie. Si le produit présente un défaut de fabrication lors de la réception, il est remplacé immédiatement sans frais supplémentaires.",
+    "ar": "✅ ضمان الجودة الكاملة. إذا كان فمة أي مشكل في المنتوج وقت الاستلام، يتم تعويضه في الحين وبدون أي مصاريف إضافية."
+  }
+}
